@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InvestIQ | Wealth Intelligence & Precision SIP Planning Platform</title>
+  <meta name="description" content="Calculate SIP returns, plan retirement, compare asset classes, and build long-term wealth with audited financial projections."/>
+  
+  <!-- Fonts & Material Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#0c1324",
+            "surface-light": "#f4f6fb",
+            "surface-container": "#191f31",
+            "surface-container-high": "#23293c",
+            "surface-container-lowest": "#070d1f",
+            "primary": "#4edea3",
+            "primary-container": "#10b981",
+            "primary-fixed": "#6ffbbe",
+            "secondary": "#b8c4ff",
+            "secondary-container": "#173bab",
+            "tertiary": "#ffb95f",
+            "tertiary-container": "#e29100",
+            "on-surface": "#dce1fb",
+            "on-surface-variant": "#bbcabf",
+            "error": "#ffb4ab"
+          },
+          fontFamily: {
+            "display": ["Geist", "sans-serif"],
+            "headline": ["Geist", "sans-serif"],
+            "body": ["Inter", "sans-serif"],
+            "mono": ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External Visual & PDF Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script type="module" crossorigin src="/assets/index-CPK7JiVY.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CXNWMYg3.css">
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 min-h-screen relative overflow-x-hidden">
+  
+  <!-- Global Video Background Loop -->
+  <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden bg-surface bg-cover bg-center" style="background-image: url('/background-poster.jpg');">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="metadata"
+      poster="/background-poster.jpg"
+      class="w-full h-full object-cover opacity-75 filter brightness-110 contrast-120 saturate-110 transition-opacity duration-700"
+    >
+      <source src="/background.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-t from-surface/80 via-surface/30 to-surface/10 pointer-events-none"></div>
+
+    <!-- Ambient Stock Ticker Stream Loop -->
+    <div class="absolute bottom-0 left-0 w-full bg-surface-container-lowest/80 border-t border-white/10 py-1.5 overflow-hidden z-10 backdrop-blur-md">
+      <div id="ambient-ticker-content" class="whitespace-nowrap flex gap-12 font-mono text-[11px] text-on-surface-variant animate-marquee">
+        <!-- Dynamically injected financial ticker items -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Top App Navigation Shell -->
+  <header id="top-nav-shell" class="fixed top-0 left-0 w-full z-50 border-b border-white/10 glass-nav transition-all duration-300 h-16 flex justify-between items-center px-4 sm:px-8"></header>
+
+  <!-- Router View Area -->
+  <main id="app-view" class="relative z-10 min-h-screen"></main>
+
+  <!-- Floating Bottom Navigation Bar for Mobile -->
+  <nav id="bottom-nav-pill" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-32px)] max-w-lg rounded-full border border-white/10 glass-nav shadow-[0_20px_50px_-12px_rgba(0,0,0,0.8)] h-16 flex justify-around items-center px-4 md:hidden"></nav>
+
+  <!-- Global AI Assistant Chatbot Floating Container -->
+  <div id="ai-assistant-container" class="fixed bottom-24 right-4 sm:right-8 z-40"></div>
+
+  <!-- Router Script -->
+</body>
+</html>
