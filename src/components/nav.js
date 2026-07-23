@@ -60,10 +60,10 @@ export function initNavigation() {
 
             <div class="text-[10px] font-bold text-tertiary uppercase tracking-wider px-2 py-1 pt-2 border-t border-white/5">Fixed & Government</div>
             <a href="#calculator?type=ppf" class="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-white/5 text-white transition-colors">
-              <span class="material-symbols-outlined text-tertiary text-base">verified</span> PPF & NPS Calculator
+              <span class="material-symbols-outlined text-tertiary text-base">verified</span> PPF / NPS Calculator
             </a>
-            <a href="#calculator?type=fd" class="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-white/5 text-white transition-colors">
-              <span class="material-symbols-outlined text-tertiary text-base">account_balance</span> FD & RD Returns
+            <a href="#calculator?type=swp" class="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-white/5 text-white transition-colors">
+              <span class="material-symbols-outlined text-tertiary text-base">payments</span> SWP Withdrawal Planner
             </a>
           </div>
         </div>

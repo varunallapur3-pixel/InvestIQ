@@ -55,17 +55,17 @@
 <body class="bg-surface text-on-surface font-body selection:bg-primary/30 min-h-screen relative overflow-x-hidden">
   
   <!-- Global Video Background Loop -->
-  <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden bg-surface bg-cover bg-center" style="background-image: url('./background-poster.jpg');">
+  <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden bg-surface bg-cover bg-center" style="background-image: url('/InvestIQ/background-poster.jpg');">
     <video
       autoplay
       loop
       muted
       playsinline
       preload="metadata"
-      poster="./background-poster.jpg"
+      poster="/InvestIQ/background-poster.jpg"
       class="w-full h-full object-cover opacity-75 filter brightness-110 contrast-120 saturate-110 transition-opacity duration-700"
     >
-      <source src="./background.mp4" type="video/mp4" />
+      <source src="/InvestIQ/background.mp4" type="video/mp4" />
     </video>
     <div class="absolute inset-0 bg-gradient-to-t from-surface/80 via-surface/30 to-surface/10 pointer-events-none"></div>
 
@@ -90,6 +90,6 @@
   <div id="ai-assistant-container" class="fixed bottom-24 right-4 sm:right-8 z-40"></div>
 
   <!-- Router Script -->
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>

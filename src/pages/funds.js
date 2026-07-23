@@ -1,6 +1,6 @@
 import { formatCurrency } from '../components/currency.js';
 
-export const fundsDatabase = [
+const fundsDatabase = [
   { id: 1, name: "Parag Parikh Flexi Cap Fund", category: "Flexi Cap", risk: "Moderate-High", return1Y: 22.4, return3Y: 18.6, return5Y: 21.2, return10Y: 19.5, nav: 78.45, rating: 5, expense: 0.62, aum: "₹64,200 Cr", brokerLink: "https://zerodha.com" },
   { id: 2, name: "Quant Small Cap Fund", category: "Small Cap", risk: "Very High", return1Y: 38.5, return3Y: 28.4, return5Y: 34.2, return10Y: 24.1, nav: 242.10, rating: 5, expense: 0.77, aum: "₹21,800 Cr", brokerLink: "https://groww.in" },
   { id: 3, name: "Nippon India Small Cap Fund", category: "Small Cap", risk: "Very High", return1Y: 34.2, return3Y: 26.1, return5Y: 29.8, return10Y: 22.8, nav: 184.30, rating: 5, expense: 0.68, aum: "₹52,400 Cr", brokerLink: "https://groww.in" },
