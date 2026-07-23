@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // Netlify serves from root /
-  base: '/',
+  // GitHub Pages serves from https://<user>.github.io/InvestIQ/
+  base: '/InvestIQ/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
